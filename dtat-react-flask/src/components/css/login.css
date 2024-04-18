@@ -1,0 +1,133 @@
+.login-div {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  display: flex;
+  flex: 50%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.login-left-div {
+  width: 60%;
+  height: 100%;
+  background-image: url("./images/loginwave.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-right-div {
+  width: 40%;
+}
+
+.login-header {
+  height: 18%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  padding-right: 4%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login-back-img {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+}
+
+.login-Dash {
+  height: fit-content;
+  overflow-y: auto;
+  width: 30%;
+  margin: 4% auto;
+  padding: 3%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-Dash h3 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 3%;
+}
+
+.login-panel {
+  display: flex;
+  line-height: 40px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.login-input {
+  width: 90%;
+  height: 16%;
+  padding: 3%;
+  margin-bottom: 5%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+  padding: 10px;
+  width: 40%;
+  background-color: #1976d2;
+  color: #fff;
+  margin-top: 25px;
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #1565c0;
+}
+
+.login-link {
+  text-align: center;
+  color: rgb(90, 67, 180);
+}
+
+.login-forgot-password {
+  margin-top: 2%;
+}
+
+.login-new-user {
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .login-Dash {
+    width: 90%;
+  }
+  .login-left-div {
+    display: none;
+  }
+  .login-right-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .login-Dash {
+    width: 70%;
+  }
+  .login-left-div {
+    display: none;
+  }
+  .login-right-div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 834px) {
+  .login-Dash {
+    width: 70%;
+  }
+}

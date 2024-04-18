@@ -1,0 +1,165 @@
+.adminwelcome-main-div {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3e5f5;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.adminwelcome-header {
+  height: 14%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-image: url("./images/picture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.adminwelcome-header-right-div button {
+  background: none;
+  color: white;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 18px;
+  position: sticky;
+}
+
+.display-activity-hide {
+  display: none;
+}
+
+.display-profile-hide {
+  display: none;
+}
+
+.display-activity-show {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 6px;
+  border: 1px solid rgb(83, 83, 250);
+  border-radius: 5px;
+  position: absolute;
+}
+
+.button-Task-Allocation-admin {
+  color: white;
+}
+
+.display-activity-show button {
+  padding: 4px;
+}
+
+.display-activity-show button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.display-profile-show button {
+  padding: 4px;
+}
+
+.display-profile-show button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.display-profile-show {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 6px;
+  width: fit-content;
+  border: 1px solid rgb(83, 83, 250);
+  border-radius: 5px;
+  position: absolute;
+}
+
+.adminwelcome-header-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.adminwelcome-img {
+  height: 74px;
+}
+
+.adminwelcome-header-right-div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4%;
+  margin-right: 4%;
+}
+
+.adminwelcome-section {
+  height: 86%;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminwelcome-subsection {
+  width: 60%;
+  height: 80%;
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.adminwelcome-section-buttonsdiv {
+  width: 60%;
+  margin: 14% auto;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  height: 20%;
+  justify-content: space-around;
+}
+
+.adminwelcome-section-buttonsdiv button {
+  background-color: #1976d2;
+  color: white;
+  border-radius: 25px;
+  padding: 2.4%;
+  border: none;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.adminwelcome-section-buttonsdiv button:active {
+  scale: 0.8;
+}
+
+.adminwelcome-section-buttonsdiv button:hover {
+  background-color: #1565c0;
+}
+
+.adminwelcome-subsection h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 835px) {
+  .adminwelcome-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .adminwelcome-subsection {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .adminwelcome-section-buttonsdiv {
+    width: 80%;
+  }
+  .adminwelcome-section-buttonsdiv button {
+    padding: 3%;
+  }
+}
