@@ -2,6 +2,7 @@ import "./css/signUp.css";
 import logo from "./css/images/logo_light.png";
 import avatar from "./css/images/avatar.svg";
 import { useState } from "react";
+import axios from "axios";
 
 function SignUp() {
   const [userName, setUserName] = useState("");
@@ -12,6 +13,31 @@ function SignUp() {
 
   const signUp = (e) => {
     e.preventDefault();
+
+    if (!userName || !circleName || !email || !password || !confirmPassword) {
+      alert("Please fill in all fields.");
+      return; // Stop execution if any field is empty
+    }
+
+    if (password === confirmPassword) {
+      axios
+        .post("http://127.0.0.1:5000/register", {
+          email,
+          password,
+          userName,
+          circleName,
+          confirmPassword,
+        })
+        .then((response) => {
+          if (response.data) alert("Registration successful");
+          else alert("Registration Unsuccessful");
+        })
+        .catch((error) => {
+          console.error("Error:", error); // Log any errors
+        });
+    } else {
+      alert("Registration unsuccessful");
+    }
   };
   return (
     <div className="signUp-div">

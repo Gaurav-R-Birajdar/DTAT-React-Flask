@@ -19,7 +19,8 @@ function Login() {
     axios
       .post("http://127.0.0.1:5000/login", { email, password })
       .then((response) => {
-        if (response.data) HandleAdminWelcome(); // Log response from backend
+        if (response.data) HandleAdminWelcome();
+        else alert("Wrong login information");
       })
       .catch((error) => {
         console.error("Error:", error); // Log any errors
