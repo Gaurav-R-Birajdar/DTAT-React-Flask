@@ -81,5 +81,23 @@ def change_password():
     except:
         return jsonify({"message": "Something went wrong"})
 
+
+@app.route("/fetchEmployee", methods=['POST'])
+def fetchEmployee():
+    data = request.json
+    circle = data.get("circle")
+    print(circle)
+
+    employees = []
+
+    try:
+        query = db.collection("UserDetails").where("circle", "==", circle).get()
+        for doc in query:
+            employees.append(doc.to_dict()["name"])
+            return jsonify({"success":True,"employeesSent":employees})
+    except Exception as e:
+        return jsonify({"success":False})
+
+
 if __name__ == "__main__":
     app.run(debug=True)

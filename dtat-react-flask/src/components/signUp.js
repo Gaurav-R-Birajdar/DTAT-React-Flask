@@ -73,29 +73,25 @@ function SignUp() {
                   onChange={(e) => setCircleName(e.target.value)}
                 >
                   <option value="-1">Select your Circle</option>
-                  <option value="Madhya Pradesh">MP (Madhya Pradesh)</option>
-                  <option value="UP West">UPW (UP West)</option>
-                  <option value="UP East">UPE (UP East)</option>
-                  <option value="Rajasthan">RJ (Rajasthan)</option>
-                  <option value="Gujarat">GUJ (Gujarat)</option>
-                  <option value="Maharashtra">MH (Maharashtra)</option>
+                  <option value="MP">MP (Madhya Pradesh)</option>
+                  <option value="UPWt">UPW (UP West)</option>
+                  <option value="UPE">UPE (UP East)</option>
+                  <option value="RJ">RJ (Rajasthan)</option>
+                  <option value="GUJ">GUJ (Gujarat)</option>
+                  <option value="MH">MH (Maharashtra)</option>
                   <option value="Bihar">Bihar</option>
-                  <option value="Rest of bengal">ROB (Rest of Bengal)</option>
-                  <option value="Punjab">PNB (Punjab)</option>
-                  <option value="Karnataka">KTK (Karnataka)</option>
-                  <option value="Mumbai">MUM (Mumbai)</option>
+                  <option value="ROB">ROB (Rest of Bengal)</option>
+                  <option value="PNB">PNB (Punjab)</option>
+                  <option value="KTK">KTK (Karnataka)</option>
+                  <option value="MUM">MUM (Mumbai)</option>
                   <option value="Chennai">Chennai</option>
-                  <option value="Jharkhand">JH (Jharkhand)</option>
-                  <option value="Kolkata">Kolkata(KOC)</option>
-                  <option value="Himachal Pradesh">
-                    Himachal Pradesh (HP)
-                  </option>
-                  <option value="Haryana">HR (Haryana)</option>
-                  <option value="Andhra Pradesh">AP (Andhra Pradesh)</option>
-                  <option value="Rest of tamil nadu">
-                    ROTN (Rest of Tamil Nadu)
-                  </option>
-                  <option value="Kerala">KE (Kerala)</option>
+                  <option value="JH">JH (Jharkhand)</option>
+                  <option value="KOC">Kolkata(KOC)</option>
+                  <option value="HP">Himachal Pradesh (HP)</option>
+                  <option value="HR">HR (Haryana)</option>
+                  <option value="AP">AP (Andhra Pradesh)</option>
+                  <option value="ROTN">ROTN (Rest of Tamil Nadu)</option>
+                  <option value="KE">KE (Kerala)</option>
                 </select>
               </dd>
               <dd>

@@ -1,0 +1,145 @@
+.projectmanagement-main-div {
+  height: 100vh;
+  width: 100vw;
+}
+
+.projectmanagement-header {
+  height: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #0d47a1;
+  color: white;
+}
+.projectmanagement-header img {
+  height: 80px;
+  position: absolute;
+  left: 3%;
+}
+.projectmanagement-box-div {
+  width: 30%;
+  margin: 4% auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 2%;
+}
+#project-name,
+#employee {
+  width: 100%;
+  height: 40px;
+  margin: 8px auto;
+  border-radius: 6px;
+}
+#box-submit {
+  width: 100%;
+  color: #fff;
+  background-color: #0d47a1;
+  padding: 10px 0;
+  margin: 4px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+}
+#box-submit:hover {
+  background-color: #007bff;
+}
+.projectmanagement-table-container {
+  width: 100%;
+  margin: 0 auto;
+}
+table {
+  width: 90%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+th,
+td {
+  padding: 0.6%;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+#submit1 {
+  padding: 10px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 14%;
+  border-radius: 25px;
+  margin: 4px auto;
+}
+#hidetable {
+  display: none;
+}
+.table-submit-button {
+  width: 80%;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 4px auto;
+  display: flex;
+  position: fixed;
+  align-items: center;
+}
+.table-btn {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  margin: 4%;
+  padding: 10px;
+  border-radius: 25px;
+}
+.table-input {
+  height: 30px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.projectName-taskAllocation {
+  border-radius: 5%;
+  width: 25%;
+}
+
+.h3-taskAllocation {
+  margin-left: 7%;
+  margin-bottom: 0.8%;
+}
+
+@media screen and (max-width: 797px) {
+  .projectmanagement-table-container {
+    width: 90%;
+    overflow-x: auto;
+  }
+  .projectmanagement-table-container table {
+    width: 100%;
+  }
+  .projectmanagement-box-div {
+    width: 80%;
+  }
+  #submit1 {
+    width: 40%;
+    text-align: center;
+
+    margin: auto;
+  }
+  .projectmanagement-header img {
+    height: 30px;
+    position: absolute;
+    left: 3%;
+  }
+}
