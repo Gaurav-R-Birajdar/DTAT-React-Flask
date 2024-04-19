@@ -1,0 +1,54 @@
+.mydetails-main-div{
+    height:100vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+    background-color: #f3e5f5;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.mydetails-section{
+    height:calc(100vh - 14%);
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mydetails-subsection dd,dt,h3{
+    margin-bottom: 5px;
+}
+.mydetails-subsection dd input{
+    font-weight: 550;
+    padding:0 2%;
+    
+    
+}
+/* .mydetails-subsection h3{
+    margin
+} */
+.mydetails-subsection{
+    border:1px solid gray;
+    width:50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius:8px;
+    padding:2%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:768px) {
+    .mydetails-subsection{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .mydetails-section{
+        overflow-y: scroll;
+
+    }
+    .mydetails-subsection{
+        margin-top: 3%;
+    }
+}
