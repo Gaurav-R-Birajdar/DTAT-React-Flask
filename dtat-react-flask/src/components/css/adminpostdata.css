@@ -1,0 +1,90 @@
+.adminpostdata-main-div {
+    height: 100vh;
+    box-sizing: border-box;
+    background: #f3e5f5;
+    overflow-y: auto;
+}
+
+.adminpostdata-section {
+    height: calc(100vh - 14%);
+    width: 100%;
+    box-sizing: border-box;
+    margin:0 auto;
+    /* padding: 0.2%; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.adminpostdata-subsection {
+    width: 70%;
+    height: 99%;
+    padding:1%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+    box-sizing: border-box;
+    
+
+}
+.adminpostdata-subsection-heading{
+
+    text-align: center;
+}
+
+.adminpostdata-dl {
+    width: 40%;
+    margin:0% auto;
+    padding: 2%;
+    height:fit-content;
+    box-sizing: border-box;
+    background: #e0e0e0;
+    border-radius:8px;
+
+}
+
+.adminpostdata-dl dd {
+    margin-bottom: 3px;
+}
+
+.adminpostdata-dl input {
+    width: 90%;
+    padding:0.3%;
+    height:28px;
+}
+.adminpostdata-dl select{
+    width:90%;
+    height:28px;
+    padding:0.3%;
+}
+
+.adminpostdata-dl button {
+    background-color: #1976d2;
+    color: black;
+    border: none;
+    padding:2% 4%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:835px) {
+    .adminpostdata-subsection{
+        width:90%;
+        height:100%;
+    }
+    .adminpostdata-section{
+        overflow-y: auto;
+    }
+    .adminpostdata-dl {
+        width:80%;
+    }
+    .adminpostdata-dl input{
+        height:30px;
+        border-radius: 5px;
+    }
+    .adminpostdata-dl select{
+        height:30px;
+    }
+}
